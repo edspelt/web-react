@@ -4,7 +4,7 @@ import NavBar from "../../components/NavBar";
 
 const Public_Layout = () => {
   return (
-    <div>
+    <div className="relative overflow-hidden bg-white">
         <NavBar/>
         <Outlet/>
     </div>
