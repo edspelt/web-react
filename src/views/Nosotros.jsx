@@ -1,9 +1,13 @@
 import React from 'react'
-import SobreNosotros from '../components/SobreNosotros'
+
+import ContentNosotros from '../components/ContentNosotros';
+import HeroNosotros from '../components/HeroNosotros';
+
 const Nosotros = () => {
   return (
     <div>
-        <SobreNosotros/>
+        <HeroNosotros/>
+        <ContentNosotros/>
     </div>
   )
 }
