@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import './App.css';
+
 
 //Layouts
 import Public_Layout from './views/layouts/Public_Layout'

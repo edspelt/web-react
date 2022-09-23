@@ -5,48 +5,15 @@ import { useState } from "react";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
-    const Cards = [
-        {
-            title: 'Inicio',
-            path: '/',
-
-
-        },
-        {
-            title: 'Nosotros',
-            path: '/Nosotros',
-
-        },
-        {
-            title: 'Servicios',
-            path: '/Servicios',
-
-        },
-        {
-            title: 'RSE',
-            path: '/RSE',
-
-        },
-        {
-            title: 'Etica',
-            path: '/Etica',
-
-        },
-        {
-            title: 'Contactanos',
-            path: '/Contactanos',
-
-        },
-        {
-            title: 'Trabaja con Nosotros',
-            path: '/Trabaja',
-
-        },
-        {
-            title: 'Proveedores',
-            path: '/Proveedores',
-
-        }
+    const navigation = [
+        { title: 'Inicio', path: '/' },
+        { title: 'Nosotros', path: '/Nosotros' },
+        { title: 'Servicios', path: '/Servicios' },
+        { title: 'RSE', path: '/RSE' },
+        { title: 'Etica', path: '/Etica' },
+        { title: 'Contactanos', path: '/Contactanos' },
+        { title: 'Trabaja con Nosotros', path: '/Trabaja' },
+        { title: 'Proveedores', path: '/Proveedores' }
     ];
 
     return (
@@ -96,15 +63,10 @@ export default function NavBar() {
                     </div>
                 </div>
                 <div>
-                    <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 lg:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
-                            }`}
-                    >
+                    <div className={`flex-1 justify-self-center pb-3 mt-8 lg:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}>
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            {
-                                Cards?.map((menu, index) => <li
-                                    key={index} className=' text-[#b02853] hover:text-black font-bold'
-                                >
+                            {navigation?.map((menu, index) =>
+                                <li key={index} className=' text-[#b02853] hover:text-black font-bold'>
                                     <Link to={menu?.path}>{menu?.title}</Link>
 
                                 </li>)
@@ -126,7 +88,7 @@ export default function NavBar() {
                                 Inicia Sesion
                             </a>
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div className="hidden space-x-2 lg:block">
                     <a
@@ -147,5 +109,4 @@ export default function NavBar() {
         </nav>
     );
 }
-
 

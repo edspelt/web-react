@@ -1,6 +1,7 @@
 import React from 'react'
 
 import ContentNosotros from '../components/ContentNosotros';
+import Gerentes from '../components/Gerentes';
 import HeroNosotros from '../components/HeroNosotros';
 
 const Nosotros = () => {
@@ -8,6 +9,7 @@ const Nosotros = () => {
     <div>
         <HeroNosotros/>
         <ContentNosotros/>
+        <Gerentes/>
     </div>
   )
 }
